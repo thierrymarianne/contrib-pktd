@@ -12,5 +12,7 @@ function build() {
   cd bin || exit
 
   zip -r "./${RELEASE_NAME}-win.zip" ./bin
+
+  mv -v "./${RELEASE_NAME}-win.zip" "${GITHUB_WORKSPACE}"'/'"${RELEASE_NAME}"'-win.zip'
 }
 build
