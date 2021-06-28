@@ -137,7 +137,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build binaries
-        run: /bin/bash -c "source $GITHUB_WORKSPACE/contrib/github-actions/build-windows-packages.sh"
+        run: /bin/bash -c "source $GITHUB_WORKSPACE/contrib/github-actions/build-windows-package.sh"
         env:
           PKT_FAIL_DIRTY: 1
           RELEASE_NAME: ${{ env.RELEASE_NAME }}
