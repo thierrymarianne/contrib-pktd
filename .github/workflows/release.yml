@@ -145,7 +145,7 @@ jobs:
       - uses: actions/upload-artifact@main
         with:
           path: |
-            ${{ github.workspace }}/${{ env.RELEASE_NAME }}-win-amd64.deb
+            ${{ github.workspace }}/${{ env.RELEASE_NAME }}-win.zip
 
       - name: Publish release
         run: /bin/bash -c "source $GITHUB_WORKSPACE/contrib/github-actions/release-windows-package.sh"
